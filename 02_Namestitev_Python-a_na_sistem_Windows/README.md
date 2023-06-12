@@ -7,3 +7,4 @@
 	Osnovni zagon osnovne Python skripte
 
 - development python knjižnice python-dev
+- Odstranjevanje stare python verzije
