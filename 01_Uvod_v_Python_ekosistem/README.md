@@ -37,8 +37,8 @@ There are two different ways of transforming a program **from a high-level progr
 - **INTERPRETATION**: You (or any user of the code) can translate the source program each time it has to be run; the program performing this kind of transformation is called an interpreter, as it *interprets the code every time it is intended to be executed*; it also means that you cannot just distribute the source code as-is, because the end-user also needs the interpreter to execute it.
 
 [Source](https://edube.org/learn/python-essentials-1/programming-absolute-basics-compilation-vs-interpretation-5)
-![Compilation vs. interpretation](./images/img01.png)
 
+![Compilation vs. interpretation](./images/img01.png)
 
 About Python:
 - Python is an **interpreted language**. This means that it inherits all the described advantages and disadvantages.
@@ -68,13 +68,32 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 - **Syntax**: Syntax is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language. (Python syntax is very simple and easy to learn.)
 
 ## Uvod v Python
-- Zgodovina
+
+### History
+- https://www.javatpoint.com/python-history
+- https://python-course.eu/python-tutorial/history-and-philosophy-of-python.php
+- https://exyte.com/blog/a-brief-history-of-python
+
+### Why Python? Advantages/Disadvantages
 - Zakaj Python? Prednsoti/slabosti
+
+
+### How Python Interprets Your Program
 - shema kako python deluje
+- https://www.freecodecamp.org/news/what-is-python-beginners-guide/
+- https://medium.com/@dpthegrey/what-is-interpreter-explain-how-python-interpreter-works-125205c1f8d6
+- https://www.appdynamics.com/blog/engineering/a-technical-deep-dive-into-python/
+- https://blog.sourcerer.io/python-internals-an-introduction-d14f9f70e583
+
+### Python Interpreter Types
 - različni python interpreterji
+- https://hackr.io/blog/python-interpreters
+
 
 ### Python 2 vs. Python 3
-
+- https://www.codingdojo.com/blog/python-2-vs-python-3-which-is-better-to-learn
+- https://www.interviewbit.com/blog/difference-between-python-2-and-3/
+- https://www.datacamp.com/blog/python-2-vs-3-everything-you-need-to-know 
 
 
 ### Python 3 versions
