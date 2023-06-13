@@ -76,7 +76,7 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 
 ### Why Python? Advantages/Disadvantages
 - Zakaj Python? Prednsoti/slabosti
-
+- https://realpython.com/python-introduction/
 
 ### How Python Interprets Your Program
 
@@ -135,3 +135,14 @@ Python uses a `major.minor.micro` nomenclature for production-ready releases. So
 - community
 - (spletna gradiva, online interpreterji)
 
+- [Real Python](https://realpython.com/): Real Python is an online learning platform that teaches individuals and companies the skills they need to work with Python in the real world.
+
+### Online Python Interpreters
+If you want to try out the examples in this tutorial without setting up Python on your machine, then there are several websites that offer an online Python interpreter:
+- [Python.org Online Console](https://www.python.org/shell/)
+- [Repl.it](https://replit.com/)
+- [Python Fiddle](http://pythonfiddle.com/)
+- [Trinket](https://trinket.io/)
+- [Python Anywhere](https://www.pythonanywhere.com/)
+
+These cloud-based Python interpreters may not be able to execute some of the more complex examples in this tutorial, but they’re adequate for running most of the code and may be a nice way to get started. 

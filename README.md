@@ -28,15 +28,21 @@ Vsebina za tečaj: Uvod v Python in razvojna okolja
 - Odstarnitev stare verzije Pythona
 
 ### [Python knjižnice](./03_Knjiznice/README.md)
-	Kaj so Python knjižnice
-	Kakšni tipi knjižnic obstajajo
-	Namestitev zunanjih knjižnic s pomočjo orodja pip 
-	Problem nameščanja knjižnic brez virtualnih okolji
+- Kaj so Python knjižnice
+- Kakšni tipi knjižnic obstajajo
+- Package Management orodja
+- Uvod v orodje pip
+- Namestitev zunanjih knjižnic s pomočjo orodja pip
+- Kvaliteta Python knjižnic
+- Uvod v Python Wheels
+- Problem nameščanja knjižnic brez virtualnega okolja
 
 ### [Python virtualno okolje](./04_Python_virtualno_okolje/README.md)
-	Python virtualno okolje venv
-	Nameščanje knjižnic s pomočjo requirements.txt datoteke
-o	IDE - Integrirana razvojna okolja (1h)
+- Zakaj potrebujemo virtualno okolje?
+- Kaj je virtualno okolje?
+- Namestitev virtualnega okolja venv
+- Uporaba in delovanje virtualnega okolja venv
+- Praktičen primer uporabe virtualnega okolja venv
 
 ### [Priprava razvojnega okolja](./05_Priprava_razvojnega_okolja/README.md)
 - Pregled integriranih razvojnih okolji

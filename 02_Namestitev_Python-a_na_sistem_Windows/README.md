@@ -163,6 +163,7 @@ How to update pyenv. Run the following in a Powershell terminal: `&"${env:PYENV_
 
 ## Uvod v Python shell
 - [The Interpreter, an Interactive Shell](https://python-course.eu/python-tutorial/interpreter-interactive-shell.php)
+- [Interacting With Python](https://realpython.com/interacting-with-python/)
 
 To start the Python shell, open the Command Prompt and run `python` or `py`. You should see the Python shell open with the version number printed to the screen.
 
