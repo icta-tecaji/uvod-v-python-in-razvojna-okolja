@@ -13,3 +13,4 @@
 
 ## Praktičen primer uporabe virtualnega okolja venv
 - pokažemo vse od začetka na eni novi mapi in dodamo requirements.txt datoteko in requirements-dev.txt datoteko
+- https://biopython.org/wiki/Download

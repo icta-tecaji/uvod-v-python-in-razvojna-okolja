@@ -134,6 +134,7 @@ Python uses a `major.minor.micro` nomenclature for production-ready releases. So
 - kje najdemo resource in podobno
 - community
 - (spletna gradiva, online interpreterji)
+- https://github.com/data-flair/python-tutorial
 
 - [Real Python](https://realpython.com/): Real Python is an online learning platform that teaches individuals and companies the skills they need to work with Python in the real world.
 

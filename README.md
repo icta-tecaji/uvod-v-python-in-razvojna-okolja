@@ -47,66 +47,24 @@ Vsebina za tečaj: Uvod v Python in razvojna okolja
 ### [Priprava razvojnega okolja](./05_Priprava_razvojnega_okolja/README.md)
 - Pregled integriranih razvojnih okolji
 - Namestitev VSCode
+- Pregled VSCode funkcionalnosti
+- Praktičen primer uporabe VSCode
+- Namestitev in uporaba Jupyter Notebook
 
 ### [Git in Github](./06_Git_in_Github/README.md)
-o	Osnove Git in Github (1-2h)
-	Kaj je Git, zakaj je uporaben
-	Kaj je Gihub in kako uporabljamo
-	Praktični primer: Namestitev Python programa iz Githuba
+- Osnove Git-a
+- Osnove Github-a
+- Praktični primer: Namestitev Python programa iz Githuba
 
 ### [Osnove programiranja](./07_Osnove_programiranja/README.md)
 - Kako se lotimo programskega problema?
-o	Osnove programiranja -> spremenljivke, aritmetične operaicje, podatkovni tipi, funkcije
-o	If, for, while zanke
-o	Pisanje Python skript
-o	Uporaba argumentov pri zagonu Python skript
-o Pregled virov ki se jih lahko uporabi pri samostojnem učenju in postopke kako nadaljevati s pisanjem kode - predvsem vaje
-o	Branje in delo z datotekami (Csv, excel, txt...)
-o	Zagon zunanjih komand in programov iz Python kode
-o	Delo z SQL podatkovnimi bazami (pregled kaj podatkovne baze so in kako jih uporabljamo)
+- TODO
 
 ### [Odpravljanje težav - debugging](./08_Odpravljanje_tezav/README.md)
-o	Reševanje težav pri zaganjanju že napisanih programov
-	Osnove debugginga
-	Pregled Python errorjev in kako se lotimo reševanja
-•	Stack overflow
-•	Error Message
-•	ChatGPT in podobna AI orodja
+- TODO
 
 ### [Ekosistem Conda](./09_Python_ekosistem_Conda/README.md)
-•	DAN 6: EKOSISTEM CONDA IN PRAKTIČEN ZAGON PROGRAMOV NA SISTEMU WINDOWS
-o	Predstavitev Conda ekosistema
-o	Namestitev
-o	Pregled komand in načina dela
-o	Namestitev zuanjih knjižnic
-o	Praktični primeri postavitve programov 
+- TODO
 
 ### [Linux in delo z oddaljenimi strežniki](./10_Linux_in_delo_z_oddaljenimi_strezniki/README.md)
-	Ideje katere programe bi želeli da pokažemo za namestitev na Windows-u
-o	Kako namestimo program na Windows če za to ni uradne podpore
-	Razalga in predstavitev opciji: Docker, WSL, VM
-•	DAN 7: LINUX IN DELO Z ODDALJENIMI STREŽNIKI
-o	Kaj so strežniki?
-o	Kaj je Linux?
-o	SSH povezava na strežnik (Putty, Terminal)
-o	Pošiljanje datotek na server (SCP, WinSCP)
-o	Povezava s pomočjo VS Code
-o	Osnove dela z Linux terminalom
-o	Namestitev Pythona in zunanjih knjižnic na Linux sistem
-o	Praktični primeri postavitve programov  na Linux sistemu
-	Ideje katere programe bi želeli da pokažemo za namestitev na Linux-u
-
-
-razen parih navdusenih odzivov na program kaksnih posebnih pripomb ni bilo. Med programi je bil dodan se en:
-•	https://github.com/merenlab/anvio
-•	http://sanger-pathogens.github.io/Artemis/ACT/
-•	http://sanger-pathogens.github.io/Artemis/Artemis/
-•	http://www.unafold.org/Dinamelt/software/obtaining-unafold.php (AD)
-
--	Illumina
--	nanopore
-o	https://github.com/GoekeLab/awesome-nanopore
--	https://github.com/bogemad/rucs_analysis
--	https://github.com/merenlab/anvio
--	http://sanger-pathogens.github.io/Artemis/ACT/
--	http://sanger-pathogens.github.io/Artemis/Artemis/
+- TODO
