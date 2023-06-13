@@ -79,6 +79,21 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 
 
 ### How Python Interprets Your Program
+
+Python is also a piece of software called an interpreter. The interpreter is the program you’ll need to run Python code and scripts. Technically, the interpreter is a layer of software that works between your program and your computer hardware to get your code running.
+
+In this process the interpreter will:
+1. **Process the statements of your script in a sequential fashion**
+2. **Compile the source code to an intermediate format known as bytecode**
+    - This bytecode is a translation of the code into a lower-level language that’s platform-independent. Its purpose is to optimize code execution. So, the next time the interpreter runs your code, it’ll bypass this compilation step.
+    - Strictly speaking, this code optimization is only for modules (imported files), not for executable scripts.
+3. **Ship off the code for execution**:
+    - At this point, something known as a Python Virtual Machine (PVM) comes into action. The PVM is the runtime engine of Python. It is a cycle that iterates over the instructions of your bytecode to run them one by one.
+    - The PVM is not an isolated component of Python. It’s just part of the Python system you’ve installed on your machine. Technically, the PVM is the last step of what is called the Python interpreter.
+
+The whole process to run Python scripts is known as the **Python Execution Model**.
+
+
 - shema kako python deluje
 - https://www.freecodecamp.org/news/what-is-python-beginners-guide/
 - https://medium.com/@dpthegrey/what-is-interpreter-explain-how-python-interpreter-works-125205c1f8d6
@@ -86,6 +101,13 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 - https://blog.sourcerer.io/python-internals-an-introduction-d14f9f70e583
 
 ### Python Interpreter Types
+
+Depending on the Python implementation you use, the interpreter can be:
+- A program written in C, like CPython, which is the core implementation of the language
+- A program written in Java, like Jython
+- A program written in Python itself, like PyPy
+- A program implemented in .NET, like IronPython
+
 - različni python interpreterji
 - https://hackr.io/blog/python-interpreters
 

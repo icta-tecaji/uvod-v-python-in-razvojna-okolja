@@ -18,9 +18,14 @@ Vsebina za tečaj: Uvod v Python in razvojna okolja
 ### [Namestitev Python-a na sistem Windows](./02_Namestitev_Python-a_na_sistem_Windows/README.md)
 - Predstavitev namestitvenih opcij
 - Uvod v terminal
+- Konfuguacija sistema Windows
 - Namestitev specifične verzije Pythona
 - Namestitev več hkratnih verziji Pythona 
+- Python Launcher for Windows
+- Pyenv za Windows
+- Uvod v Python shell
 - Osnovni zagon Python skript
+- Odstarnitev stare verzije Pythona
 
 ### [Python knjižnice](./03_Knjiznice/README.md)
 	Kaj so Python knjižnice
@@ -34,7 +39,8 @@ Vsebina za tečaj: Uvod v Python in razvojna okolja
 o	IDE - Integrirana razvojna okolja (1h)
 
 ### [Priprava razvojnega okolja](./05_Priprava_razvojnega_okolja/README.md)
-	VSCode, Jupyter Notebook, PyCharm
+- Pregled integriranih razvojnih okolji
+- Namestitev VSCode
 
 ### [Git in Github](./06_Git_in_Github/README.md)
 o	Osnove Git in Github (1-2h)
