@@ -78,6 +78,15 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 - Zakaj Python? Prednsoti/slabosti
 - https://realpython.com/python-introduction/
 
+Advantages:
+- It is beginner-friendly (Easy to learn, Easy to read, Easy to write, Easy to debug).
+- Python is open-source and has a large community.
+- It is great for both startups as well as big organizations.
+- It has great career opportunities.
+- Python has many powerful frameworks. 
+- Python’s readability and ease-of-use make developers more productive.
+- Is a general-purpose language, but is used almost everywhere (web development, machine learning, data science, Scripting, biology,... etc.)
+
 ### How Python Interprets Your Program
 
 Python is also a piece of software called an interpreter. The interpreter is the program you’ll need to run Python code and scripts. Technically, the interpreter is a layer of software that works between your program and your computer hardware to get your code running.
@@ -131,12 +140,22 @@ Python uses a `major.minor.micro` nomenclature for production-ready releases. So
 
 
 ## Predstavitev Python dokumentacije in virov za lastno učenje
-- kje najdemo resource in podobno
-- community
-- (spletna gradiva, online interpreterji)
-- https://github.com/data-flair/python-tutorial
 
+### Python Official Resources
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+- [Python Documentation](https://docs.python.org/3/)
+- [The official home of the Python Programming Language.](https://www.python.org/)
+- [Python Package Index](https://pypi.org/)
+- [Python Enhancement Proposals](https://www.python.org/dev/peps/)
+- [Python Developer’s Guide](https://devguide.python.org/)
+
+### Tutorial Resources
 - [Real Python](https://realpython.com/): Real Python is an online learning platform that teaches individuals and companies the skills they need to work with Python in the real world.
+- [SuperFastPython](https://superfastpython.com/): Master Threading, Multiprocessing, and AsyncIO
+- [The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)
+- [Test-Driven](https://testdriven.io/): Test-Driven Development with Python, Flask, and Docker
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+- [Python Tutorial](https://github.com/data-flair/python-tutorial)
 
 ### Online Python Interpreters
 If you want to try out the examples in this tutorial without setting up Python on your machine, then there are several websites that offer an online Python interpreter:
@@ -147,3 +166,12 @@ If you want to try out the examples in this tutorial without setting up Python o
 - [Python Anywhere](https://www.pythonanywhere.com/)
 
 These cloud-based Python interpreters may not be able to execute some of the more complex examples in this tutorial, but they’re adequate for running most of the code and may be a nice way to get started. 
+
+### Exercise and Quiz Resources
+- [Exercism](https://exercism.org/): Exercism is an online platform designed to help you improve your coding skills through practice and mentorship.
+
+### Other Usefull Resources
+- [very Programmer Should Know](https://github.com/mtdvio/every-programmer-should-know)
+- [Awesome Python](https://github.com/vinta/awesome-python): A curated list of awesome Python frameworks, libraries, software and resources.
+- [Awesome Python Books](https://github.com/Junnplus/awesome-python-books)
+- https://pythontutor.com/

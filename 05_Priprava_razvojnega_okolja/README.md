@@ -17,3 +17,4 @@
 - IDE - Integrirana razvojna okolja (1h)
 
 - https://realpython.com/what-is-pip/#separating-production-and-development-dependencies
+- https://github.com/data-flair/python-tutorial#8-popular-ides
