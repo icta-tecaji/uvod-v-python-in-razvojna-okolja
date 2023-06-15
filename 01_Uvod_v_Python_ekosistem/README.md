@@ -68,18 +68,72 @@ The interpreter **reads the source code from top to bottom** and from left to ri
 - **Syntax**: Syntax is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language. (Python syntax is very simple and easy to learn.)
 
 ## Uvod v Python
+**Python is a widely-used, interpreted, object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming.**
+
 
 ### History
-- https://www.javatpoint.com/python-history
-- https://python-course.eu/python-tutorial/history-and-philosophy-of-python.php
-- https://exyte.com/blog/a-brief-history-of-python
+- [History and Philosophy of Python](https://python-course.eu/python-tutorial/history-and-philosophy-of-python.php)
+- [A brief history of Python](https://exyte.com/blog/a-brief-history-of-python)
+
+One of the amazing features of Python is the fact that it **is actually one person's work.** Usually, new programming languages are developed and published by large companies employing lots of professionals, and due to copyright rules, it is very hard to name any of the people involved in the project. Python is an exception.
+
+And while you may know the python as a large snake, the name of the Python programming language comes from an old BBC television comedy sketch series called **Monty Python's Flying Circus**.
+
+Python was created by **Guido van Rossum**, born in 1956 in Haarlem, the Netherlands. Of course, Guido van Rossum did not develop and evolve all the Python components himself.
+
+The circumstances in which Python was created are a bit puzzling. According to Guido van Rossum:
+> In December 1989, I was looking for a "hobby" programming project that would keep me occupied during the week around Christmas. My office (...) would be closed, but I had a home computer, and not much else on my hands. I decided to write an interpreter for the new scripting language I had been thinking about lately: a descendant of ABC that would appeal to Unix/C hackers. I chose Python as a working title for the project, being in a slightly irreverent mood (and a big fan of Monty Python's Flying Circus).
+
+The speed with which Python has spread around the world is a result of the **continuous work of thousands (very often anonymous) programmers**, testers, users (many of them aren't IT specialists) and enthusiasts, but it must be said that the very first idea (the seed from which Python sprouted) came to one head - Guido's.
+
+### Development Steps of Python
+
+Guido Van Rossum published the **first version of Python code (version 0.9.0)** in **February 1991**. This release included already exception handling, functions, and the core data types of list, dict, str and others. It was also object oriented and had a module system.
+
+**Python version 1.0 was released in January 1994**. The major new features included in this release were the functional programming tools lambda, map, filter and reduce, which Guido Van Rossum never liked.
+
+Six and a half years later in **October 2000, Python 2.0** was introduced. This release included list comprehensions, a full garbage collector and it was supporting unicode.
+
+Python flourished for another 8 years in the versions 2.x before the next major release as **Python 3.0** (also known as "Python 3000" and "Py3K") was released. Python 3 is not backwards compatible with Python 2.x.
+
+A good example of **Python’s principles is the Zen of Python**, a set of aphorisms from the software engineer Tom Peters. In 20 lines such as “Beautiful is better than ugly.”, the [Zen contains the core philosophy of Python](https://peps.python.org/pep-0020/).
+
+> Try to read the Zen of Python and think about what each line means. You can do this by typing `import this` in the Python interpreter.
+
+```
+>>> import this
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
 
 ### Why Python? Advantages/Disadvantages
-- Zakaj Python? Prednsoti/slabosti
-- https://realpython.com/python-introduction/
+- [Introduction to Python 3](https://realpython.com/python-introduction/)
 
-Advantages:
-- It is beginner-friendly (Easy to learn, Easy to read, Easy to write, Easy to debug).
+**Advantages**:
+- Python is Popular
+- Python is Free
+- Python is Portable
+- It is beginner-friendly and simple (Easy to learn, Easy to read, Easy to write, Easy to debug).
 - Python is open-source and has a large community.
 - It is great for both startups as well as big organizations.
 - It has great career opportunities.
@@ -87,7 +141,19 @@ Advantages:
 - Python’s readability and ease-of-use make developers more productive.
 - Is a general-purpose language, but is used almost everywhere (web development, machine learning, data science, Scripting, biology,... etc.)
 
+**Disadvantages**:
+- Python is slow as compared to C or C++. It's not a speed demon - Python does not deliver exceptional performance;
+- In some cases it may be resistant to some simpler testing techniques - this may mean that debugging Python's code can be more difficult than with other languages; fortunately, making mistakes is always harder in Python.
+- Not for low-level programming (like microcontrollers, embedded systems, etc.). There are still some frameworks like MicroPython, CircuitPython, etc. to develop low-level applications in Python.
+- Not for Mobile and Game development (although there are some frameworks like Kivy, Pygame, etc. to develop mobile and game applications in Python)
+
+While Python was steadily growing basically its whole existence, from around 2010, it started on a growth trajectory that soon enabled it to rival other top programming languages, such as Java and JavaScript.
+![Python growth](https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/projections-1-1024x878.png)
+[Source](https://stackoverflow.blog/2017/09/06/incredible-growth-python/)
+
 ### How Python Interprets Your Program
+- [A Technical Deep Dive into Python](https://www.appdynamics.com/blog/engineering/a-technical-deep-dive-into-python/)
+- [Python Internals: An Introduction](https://blog.sourcerer.io/python-internals-an-introduction-d14f9f70e583)
 
 Python is also a piece of software called an interpreter. The interpreter is the program you’ll need to run Python code and scripts. Technically, the interpreter is a layer of software that works between your program and your computer hardware to get your code running.
 
@@ -96,36 +162,53 @@ In this process the interpreter will:
 2. **Compile the source code to an intermediate format known as bytecode**
     - This bytecode is a translation of the code into a lower-level language that’s platform-independent. Its purpose is to optimize code execution. So, the next time the interpreter runs your code, it’ll bypass this compilation step.
     - Strictly speaking, this code optimization is only for modules (imported files), not for executable scripts.
+    - The bytecode is stored in files with the `.pyc` extension. These files are binary files that contain the bytecode, which is then sent to the PVM for execution.
 3. **Ship off the code for execution**:
     - At this point, something known as a Python Virtual Machine (PVM) comes into action. The PVM is the runtime engine of Python. It is a cycle that iterates over the instructions of your bytecode to run them one by one.
     - The PVM is not an isolated component of Python. It’s just part of the Python system you’ve installed on your machine. Technically, the PVM is the last step of what is called the Python interpreter.
 
 The whole process to run Python scripts is known as the **Python Execution Model**.
 
+[Source](https://www.c-sharpcorner.com/blogs/importance-of-python-programming1)
 
-- shema kako python deluje
-- https://www.freecodecamp.org/news/what-is-python-beginners-guide/
-- https://medium.com/@dpthegrey/what-is-interpreter-explain-how-python-interpreter-works-125205c1f8d6
-- https://www.appdynamics.com/blog/engineering/a-technical-deep-dive-into-python/
-- https://blog.sourcerer.io/python-internals-an-introduction-d14f9f70e583
+![Python Execution Model](./images/img03.png)
 
-### Python Interpreter Types
+### Python Implementations Types
+- [Best Python Interpreters: Choose the Best in 2023](https://hackr.io/blog/python-interpreters)
 
 Depending on the Python implementation you use, the interpreter can be:
-- A program written in C, like CPython, which is the core implementation of the language
-- A program written in Java, like Jython
-- A program written in Python itself, like PyPy
-- A program implemented in .NET, like IronPython
-
-- različni python interpreterji
-- https://hackr.io/blog/python-interpreters
-
+- **CPython**:
+    - The most popular form of Python being implemented today, CPython is often thought of as the “default” Python implementation. Written in C, CPython compiles source code to bytecode. After that, it interprets the bytecode, executing it on the fly.
+    - It is compiled to run on virtual machines, which are software that emulate specific computer hardware. That way, the bytecode does not have to be configured for a myriad of different computer systems.
+- **Jython**:
+    - Another implementation of Python is called Jython. Instead of C, it is written in Java and is interpreted for the Java Virtual Machine (JVM).
+    - The reason there is a variety of Python implementations is each one is better-suited for a unique technology stack. For example, Jython is geared toward a Java stack. It:
+        - Works naturally and effortlessly with Java programs.
+        - Imports a variety of Java classes.
+        - Uses Java classes directly from inside the Jython program.
+- **IronPython**:
+    - Written in C#, IronPython was created by Jim Hugunin in 2006 and is designed for the .NET stack. 
+- **PyPY**:
+    - PyPy is a Python implementation written in Python. It is a very fast implementation of Python, but it is not fully compatible with CPython.
 
 ### Python 2 vs. Python 3
-- https://www.codingdojo.com/blog/python-2-vs-python-3-which-is-better-to-learn
-- https://www.interviewbit.com/blog/difference-between-python-2-and-3/
-- https://www.datacamp.com/blog/python-2-vs-3-everything-you-need-to-know 
+- [How we rolled out one of the largest Python 3 migrations ever](https://dropbox.tech/application/how-we-rolled-out-one-of-the-largest-python-3-migrations-ever)
+- [Difference Between Python 2 and 3](https://www.interviewbit.com/blog/difference-between-python-2-and-3/)
+- [Python 2 vs 3: Everything You Need to Know](https://www.datacamp.com/blog/python-2-vs-3-everything-you-need-to-know)
 
+Python 2 was launched in 2000; Python 3 was launched in 2008. The issue with Python 3 was that it wasn’t backward compatible with its predecessor. So many companies still rely on Python 2—fourteen years after the introduction of Python 3—because transferring codes between Python 2 vs. 3 is a lot of effort. It could take years. 
+
+> It took DropBox three years to migrate, despite Guido Van Rossum working for them.
+
+Python 2 is no longer supported by the Python Software Foundation. The last major version of Python 2, Python 2.7, was released in 2010 and was supported through 2020. After 2020, there was no new security updates, bug fixes, or other improvements. **Python 2 is legacy, Python 3 is the present and future of the language.**
+
+**Difference Between Python 2 and 3**:
+- Print is now a function
+- Views and iterators instead of lists
+- The rules for ordering comparisons have been simplified. E.g. a heterogeneous list cannot be sorted, because all the elements of a list must be comparable to each other.
+- There is only one integer type left, i.e. int. long is int as well.
+- The division of two integers returns a float instead of an integer. "//" can be used to have the "old" behaviour.
+- Text Vs. Data Instead Of Unicode Vs. 8-bit
 
 ### Python 3 versions
 - [Development Cycle](https://devguide.python.org/developer-workflow/development-cycle/)
@@ -137,7 +220,6 @@ Python uses a `major.minor.micro` nomenclature for production-ready releases. So
 - new **micro versions** are bugfix releases; they get released roughly every 2 months; they are prepared in maintenance branches.
 
 ![Python 3 versions](./images/img02.png)
-
 
 ## Predstavitev Python dokumentacije in virov za lastno učenje
 
