@@ -112,9 +112,69 @@ Use the list command to verify that the packages have been uninstalled: `pip lis
 ## Kvaliteta Python knjižnic
 - [How to Evaluate the Quality of Python Packages](https://realpython.com/python-package-quality/)
 
-## Uvod v Python Wheels
-- https://realpython.com/python-wheels/
+**Evaluate the Quality of Third-Party Python Packages**:
+1.  Before you install a package with pip, you should **make sure that it’s available on PyPI**.
+    - Unless you’re looking for a very niche package, chances are that PyPI will present you with a list of thousands of packages that match your topic.
+    - Sometimes, it can be tricky to find the right package on PyPI, even if you know the package’s name (beautiful soup example).  
+    - It’s important that a package supports the Python version of your project (requests example). 
+    - It’s a good idea to also add Development Status into your consideration.
+    - On the PyPI details page of a package, you’ll find the most important information about a package:
+        - Project description
+        - Supported Python versions
+        - Release history
+        - Project links
+        - GitHub statistics
+        - License information
+        - Author details
+    - Always make sure that the project description is mature.
+2.  View the project’s statistics on [Libraries.io](https://libraries.io/).
+    - On Libraries.io, you see other valuable data points, such as:
+        - Dependent packages
+        - First release
+        - Contributors
+3. Explore the GitHub Repository
+    - The GitHub repository of a third-party package shows you how active its development is. You can dig into the repository to explore the source code yourself or browse through the issues to see how other developers use the package.
+    - Some of the metrics are the number of:
+        - Watchers: People who have chosen to receive notifications about a repository’s activity
+        - Stars: A way for users to bookmark or like a repository to keep track of it
+        - Forks: Copies of a repository that someone has created in order to make changes without affecting the original codebase
+        - Pull requests: Proposed changes to a repository that a contributor has submitted for review and potential merging into the main codebase
+        - Issues: A way for users to report problems or suggest new features for a repository, which contributors or maintainers can then address
+    - Last but not least, pay attention to the README file of the repository. Similar to the PyPI package details page, the README file is a great indicator of how much care contributors put into the package. 
+4. Look at the License
+5. Security concerns
+    - **Similarly, you shouldn’t implement any external packages into your code without ensuring that you can trust the source.**
+    - There’s a chance that you’ll **make a typo in your pip command**. Wrongdoers may exploit this possibility by giving their packages names that imitate popular packages. 
+        - Use the correct number in the package name.
+            - For example, when working with Jinja templates in Python 3, you may accidentally type Jinja3 instead of using the correct Jinja2 version.
+        - Remember if the package name is singular or plural.
+            - For example, you use request without an s on the end of your pip command instead of using the correct requests name. 
+        - Guard against typosquatting.
+            - Evildoers may upload packages where they’ve switched two letters or replaced one with a neighboring letter on the keyboard. This imitation technique is known as typosquatting. **Some packages can be considered malware and shouldn’t find their way onto your system.**
 
+Before you install packages with pip, you should ask yourself these questions:
+- Does the package support the Python version that you’re working with?
+- How popular is the package?
+- Is the package’s codebase well maintained?
+- Do other packages rely on the package?
+- Does the package’s license fit your needs?
+- What’s the exact pip install command for the package?
+
+## Uvod v Python Wheels
+- [What Are Python Wheels and Why Should You Care?](https://realpython.com/python-wheels/)
+
+Wheels are a component of the Python ecosystem that helps to **make package installs just work**. They **allow for faster installations and more stability in the package distribution process**. 
+
+> The `tar.gz` tarball that pip retrieves is a source distribution, or `sdist`, rather than a wheel. In some ways, a sdist is the opposite of a wheel.
+
+Wheels make the end-to-end installation of Python packages faster for two reasons:
+1. All else being equal, wheels are typically **smaller in size** than source distributions, meaning they can move faster across a network.
+2. Installing from wheels directly avoids the intermediate step of **building** packages off of the source distribution.
+
+**There’s no need for a compiler to install wheels** that contain compiled extension modules. The extension module comes included with the wheel targeting a specific platform and Python version.
+
+It doesn’t hurt to make sure that setuptools is up to date, too:
+- `pip install -U wheel setuptools`
 
 ## Problem nameščanja knjižnic brez virtualnega okolja
 The problem with installing packages globally is that you might end up with a system that behaves differently than you expect. For example, you might have a project that depends on a specific version of a package, but another project that requires a different version. If you install both versions globally, then you’ll run into problems.
