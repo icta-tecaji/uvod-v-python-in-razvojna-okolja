@@ -12,7 +12,7 @@ Namestitev
 
 ## Conda
 - https://docs.conda.io/projects/conda/en/stable/index.html
-
+- https://realpython.com/python-virtual-environments-a-primer/#the-conda-package-and-environment-manager
 
 ## Bioconda
 - https://bioconda.github.io/

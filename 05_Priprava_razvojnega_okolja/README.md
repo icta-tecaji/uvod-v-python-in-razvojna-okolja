@@ -10,7 +10,7 @@
 
 ## Namestitev in uporaba Jupyter Notebook
 
-
+- pokažemo vse od začetka na eni novi mapi in dodamo requirements.txt datoteko in requirements-dev.
 	VSCode, Jupyter Notebook, PyCharm
 - https://realpython.com/python-coding-setup-windows/#setting-up-vs-code
 
