@@ -46,8 +46,7 @@ Vsebina za tečaj: Uvod v Python in razvojna okolja
 
 ### [Priprava razvojnega okolja](./05_Priprava_razvojnega_okolja/README.md)
 - Pregled integriranih razvojnih okolji
-- Namestitev VSCode
-- Pregled VSCode funkcionalnosti
+- Namestitev VSCode in uporaba
 - Praktičen primer uporabe VSCode
 - Namestitev in uporaba Jupyter Notebook
 

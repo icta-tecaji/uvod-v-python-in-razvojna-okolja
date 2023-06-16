@@ -238,6 +238,7 @@ Python uses a `major.minor.micro` nomenclature for production-ready releases. So
 - [Test-Driven](https://testdriven.io/): Test-Driven Development with Python, Flask, and Docker
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [Python Tutorial](https://github.com/data-flair/python-tutorial)
+- [Python for Biologists](https://www.pythonforbiologists.org/)
 
 ### Online Python Interpreters
 If you want to try out the examples in this tutorial without setting up Python on your machine, then there are several websites that offer an online Python interpreter:
