@@ -12,4 +12,4 @@
 
 ## Primeri vodenih projektov
 - [Build a Site Connectivity Checker in Python](https://realpython.com/site-connectivity-checker-python/)
-- [https://realpython.com/build-a-python-url-shortener-with-fastapi/](https://realpython.com/build-a-python-url-shortener-with-fastapi/)
+- [Build a URL Shortener With FastAPI and Python](https://realpython.com/build-a-python-url-shortener-with-fastapi/)
