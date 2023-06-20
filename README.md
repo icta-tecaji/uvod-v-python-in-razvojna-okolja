@@ -73,7 +73,8 @@ Password: 0898
 ### [Osnove programiranja](./07_Osnove_programiranja/README.md)
 
 - Kako se lotimo programskega problema?
-- TODO
+- Izdelava praktičnega projekta
+- Primeri vodenih projektov
 
 ### [Odpravljanje težav - debugging](./08_Odpravljanje_tezav/README.md)
 

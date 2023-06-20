@@ -1,14 +1,15 @@
 # Osnove programiranja
 
 ## Kako se lotimo programskega problema?
-- https://www.pythonforbiologists.org/
+- Cilj je, da se naučimo razmišljati kot programer.
+- Programiranje je proces reševanja problemov.
+- Projekt se začne z idejo, ki jo je potrebno razdeliti na manjše probleme.
 
-- Kako se lotimo programskega problema?
-o	Osnove programiranja -> spremenljivke, aritmetične operaicje, podatkovni tipi, funkcije
-o	If, for, while zanke
-o	Pisanje Python skript
-o	Uporaba argumentov pri zagonu Python skript
-o Pregled virov ki se jih lahko uporabi pri samostojnem učenju in postopke kako nadaljevati s pisanjem kode - predvsem vaje
-o	Branje in delo z datotekami (Csv, excel, txt...)
-o	Zagon zunanjih komand in programov iz Python kode
-o	Delo z SQL podatkovnimi bazami (pregled kaj podatkovne baze so in kako jih uporabljamo)
+## Izdelava praktičnega projekta
+- **Ideja**: Orodje za enostavno manipuliranje z datotekami (združevanje tabel, izvoz med formati, dodajanje tabel v baze).
+- Med izdelavo si bomo pogledali osnove programiranja v Pythonu.
+- Začnemo z pripravo okolja in naredimo repozitorij na GitHubu.
+
+## Primeri vodenih projektov
+- [Build a Site Connectivity Checker in Python](https://realpython.com/site-connectivity-checker-python/)
+- [https://realpython.com/build-a-python-url-shortener-with-fastapi/](https://realpython.com/build-a-python-url-shortener-with-fastapi/)
