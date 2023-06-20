@@ -60,8 +60,9 @@ Password: 0898
 
 - Pregled integriranih razvojnih okolji
 - Namestitev VSCode in uporaba
-- Praktičen primer uporabe VSCode
 - Namestitev in uporaba Jupyter Notebook
+    - Jupyter Notebooks in VS Code
+    - Google Colab
 
 ### [Git in Github](./06_Git_in_Github/README.md)
 

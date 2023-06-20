@@ -1,17 +1,17 @@
 {
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
     "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=160",
-    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=160"],
     "python.formatting.provider": "none",
-    "editor.formatOnSave": true,
+    "python.linting.lintOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+      "source.organizeImports": true
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-}
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true
+    }
+  }

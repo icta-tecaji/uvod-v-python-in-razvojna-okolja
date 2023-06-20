@@ -27,7 +27,7 @@ Namestitve:
 - https://anvio.org/install/ -> Docker in Linux sistem
 
 - https://biocontainers.pro/
-
+- JupyterLab:
 
 ## BioContainers
 - https://biocontainers-edu.readthedocs.io/en/latest/what_is_container.html
