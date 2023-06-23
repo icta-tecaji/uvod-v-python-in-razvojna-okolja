@@ -16,7 +16,9 @@ In addition to showing you the log of changes you’ve made, Git also allows you
 > Check if git is installed: `git --version`. If not use the page [Download for Windows](https://git-scm.com/download/win) to install it.
 
 ### Creating a New Repo
-- To work with Git, you first need to tell it who you are. You can set your username with the git config command: `git config --global user.name "your name goes here"`
+- To work with Git, you first need to tell it who you are. You can set your username and email with the git config command: 
+    - `git config --global user.name "your name goes here"`
+    - `git config --global user.email "your email goes here"`
 - Once that is set up, you will need a repo to work in. Creating a repo is simple. Use the git init command in a directory:
     - `mkdir example`
     - `cd example`

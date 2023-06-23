@@ -78,7 +78,9 @@ Password: 0898
 
 ### [Odpravljanje težav - debugging](./08_Odpravljanje_tezav/README.md)
 
-- TODO
+- Python exceptions
+- Reading Python Tracebacks
+- Kako se lotimo reševanja težav Python programov?
 
 ### [Ekosistem Conda](./09_Python_ekosistem_Conda/README.md)
 

@@ -33,7 +33,7 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 ```
 
-## Reading Python Traceback
+## Reading Python Tracebacks
 - [Understanding the Python Traceback](https://realpython.com/python-traceback/)
 
 Python prints a traceback when an exception is raised in your code. The traceback output can be a bit overwhelming if you’re seeing it for the first time or you don’t know what it’s telling you. But the Python traceback has a wealth of information that can help you diagnose and fix the reason for the exception being raised in your code. Understanding what information a Python traceback provides is vital to becoming a better Python programmer.
