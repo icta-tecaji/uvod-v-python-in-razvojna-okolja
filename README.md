@@ -83,8 +83,10 @@ Password: 0898
 - Kako se lotimo reševanja težav Python programov?
 
 ### [Ekosistem Conda](./09_Python_ekosistem_Conda/README.md)
+- Predstavitev ekosistema Conda
+- Namestitev ekosistema Conda
+- Uporaba ekosistema Conda
 
-- TODO
 
 ### [Linux in delo z oddaljenimi strežniki](./10_Linux_in_delo_z_oddaljenimi_strezniki/README.md)
 
