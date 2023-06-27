@@ -94,6 +94,7 @@ A conda environment is **a directory that contains a specific collection of cond
     - `conda create --name test`
     - Type `y` and press Enter to proceed.
     - No packages will be installed in this environment.
+        - `conda list`
 
 > By default, environments are installed into the envs directory in your conda directory.
 
@@ -107,9 +108,24 @@ A conda environment is **a directory that contains a specific collection of cond
 
 > The active environment is the one with an asterisk (*).
 
+#### Python virtual environment vs Conda environment
+
+Most people think that conda is for Python, but the reality is that a conda virtual environment is a generic environment where you can install almost anything.
 
 
+|                         | Python virtual environment                                            | Conda virtual environment                                         |
+|-------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------|
+| Libraries               | Statically link, vendor libraries in wheels, or use apt/yum/brew/etc. | Install system-level libraries as conda dependencies.             |
+| System                  | Depend on base system install of Python.                              | Python is independent from system.                                |
+| Extending environment   | Extend environment with pip.                                          | Extended environment with conda or pip.                           |
+| Non-Python dependencies |                                                                       | Manages non-Python dependencies (R, Perl, arbitrary executables). |
+| Tracking dependencies   |                                                                       | Tracks binary dependencies explicitly.                            |
 
+Some questions to consider as you determine your preferred workflow and virtual environment:
+- Is your environment shared across multiple code projects?
+- Does your environment live alongside your code or in a separate place?
+- Do your install steps involve installing any external libraries?
+- Do you want to ship your environment as an archive of some sort containing the actual files of the environment?
 
 
 ### Conda vs. pip 
@@ -118,7 +134,6 @@ Install all the programs that you want in this environment at the same time. Ins
 
 When you create a new virtual environment, you can install Python libraries using both conda or pip. Most of the time there is no difference in installing them with conda or pip. The pip catalog is more complete, while the conda dependency resolver is more robust. Inside a conda virtual environment, you have access to both conda and pip to install libraries.
 
-Most people think that conda is for Python, but the reality is that a conda virtual environment is a generic environment where you can install almost anything.
 
 - https://towardsdatascience.com/managing-project-specific-environments-with-conda-b8b50aa8be0e
 - https://docs.conda.io/projects/conda/en/stable/glossary.html
