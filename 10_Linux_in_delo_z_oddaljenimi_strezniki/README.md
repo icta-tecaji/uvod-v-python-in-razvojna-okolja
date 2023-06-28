@@ -1,8 +1,10 @@
 # Linux in delo z oddaljenimi strežniki
 
 	Ideje katere programe bi želeli da pokažemo za namestitev na Windows-u
-o	Kako namestimo program na Windows če za to ni uradne podpore
-	Razalga in predstavitev opciji: Docker, WSL, VM
+- Kako namestimo program na Windows če za to ni uradne podpore
+    - Razalga in predstavitev opciji: Docker, WSL, VM
+    - 
+
 •	DAN 7: LINUX IN DELO Z ODDALJENIMI STREŽNIKI
 o	Kaj so strežniki?
 o	Kaj je Linux?
@@ -15,7 +17,11 @@ o	Praktični primeri postavitve programov  na Linux sistemu
 	Ideje katere programe bi želeli da pokažemo za namestitev na Linux-u
 
 
-
+- kako prenašamo zadeve na server 
+    - scp, git, install preko docker repota, apt isntall
+    - skripte za ve computin pawerja
+- kako zaganjamo
+    - docker 
 
 
 -https://learn.microsoft.com/en-us/windows/python/web-frameworks
