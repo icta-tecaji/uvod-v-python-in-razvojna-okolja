@@ -3,6 +3,7 @@
 - [The definitive guide to Python virtual environments with conda](https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda)
 - [Getting Started with Conda](https://towardsdatascience.com/managing-project-specific-environments-with-conda-b8b50aa8be0e)
 - [Getting started with conda](https://conda.io/projects/conda/en/stable/user-guide/getting-started.html)
+- [Glossary](https://docs.conda.io/projects/conda/en/stable/glossary.html)
 
 ## Predstavitev ekosistema Conda
 
@@ -96,7 +97,7 @@ A conda environment is **a directory that contains a specific collection of cond
     - No packages will be installed in this environment.
         - `conda list`
 
-> By default, environments are installed into the envs directory in your conda directory.
+> By default, environments are installed into the envs directory in your conda directory. [Specifying a location for an environment](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html#specifying-a-location-for-an-environment)
 
 3. To use, or "activate" the new environment, type the following: `conda activate test`
 4. Now that you are in your test environment, any conda commands you type will go to that environment until you deactivate it.
@@ -127,32 +128,77 @@ Some questions to consider as you determine your preferred workflow and virtual 
 - Do your install steps involve installing any external libraries?
 - Do you want to ship your environment as an archive of some sort containing the actual files of the environment?
 
+### Managing Python
+- [Managing Python](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-python.html)
 
-### Conda vs. pip 
-Install all the programs that you want in this environment at the same time. Installing 1 program at a time can lead to dependency conflicts.
+Conda treats Python the same as any other package, so it is easy to manage and update multiple installations.
 
+To list the versions of Python that are available to install, in your terminal window or an Anaconda Prompt, run:
+- `conda search python`
 
-When you create a new virtual environment, you can install Python libraries using both conda or pip. Most of the time there is no difference in installing them with conda or pip. The pip catalog is more complete, while the conda dependency resolver is more robust. Inside a conda virtual environment, you have access to both conda and pip to install libraries.
+When you create a new environment, conda installs the same Python version you used when you downloaded and installed Anaconda. If you want to **use a different version of Python**, for example Python 3.5, simply create a new environment and specify the version of Python that you want.
+1. Create a new environment named `projekt-stari` that contains Python 3.9:
+    - `conda create --name projekt-stari python=3.9`
+2. Activate the new environment: `conda activate projekt-stari`
+3. Verify that the environment has been added and is active: `conda info --envs`
+4. Verify which version of Python is in your current environment: `python --version`
+5. Deactivate the snakes environment and return to base environment: `conda deactivate`
 
+### Managing packages
+- [Conda packages](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html)
+- [Managing packages](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-pkgs.html)
 
-- https://towardsdatascience.com/managing-project-specific-environments-with-conda-b8b50aa8be0e
-- https://docs.conda.io/projects/conda/en/stable/glossary.html
+A **conda package is a compressed tarball file (.tar.bz2) or [.conda](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html#conda-file-format) file** that contains:
+- system-level libraries.
+- Python or other modules.
+- executable programs and other components.
+- metadata under the info/ directory.
+- a collection of files that are installed directly into an install prefix.
 
+> .conda is the preferred file format to use where available, although we continue to provide .tar.bz2 files in tandem.
 
-•	DAN 6: EKOSISTEM CONDA IN PRAKTIČEN ZAGON PROGRAMOV NA SISTEMU WINDOWS
-o	
-o	
-o	Pregled komand in načina dela
-o	Namestitev zuanjih knjižnic
-o	Praktični primeri postavitve programov 
+Conda keeps **track of the dependencies** between packages and platforms. The conda package format is **identical across platforms** and operating systems.
+
+1. Activate the environment where you want to install the package: `conda activate test`
+2. Check if a package is installed: `conda list`
+3. Check to see if a package is available from the Anaconda repository: `conda search beautifulsoup4`
+4. Install a package: `conda install beautifulsoup4`
+5. Check to see if the newly installed program is in this environment: `conda list`
+
+> It is best to install all packages at once, so that all of the dependencies are installed at the same time. Installing 1 program at a time can lead to dependency conflicts.
+
+To install multiple packages at once and specify the version of the package:
+- `conda install pandas=1.5.3 numpy=1.25.0`
+
+#### Using pip in an environment
+
+**Issues may arise when using pip and conda together**. When combining conda and pip, it is best to use an isolated conda environment. **Only after conda has been used to install as many packages as possible should pip be used to install any remaining software**. If modifications are needed to the environment, it is best to create a new environment rather than running conda after pip. When appropriate, conda and pip requirements should be **stored in text files.**
+
+Recommendations:
+- Install as many requirements as possible with conda then use pip.
+- Create a conda environment to isolate any changes pip makes. (Care should be taken to avoid running pip in the root environment.)
+- Once pip has been used, conda will be unaware of the changes.
+- To install additional conda packages, it is best to recreate the environment.
+- Store conda and pip requirements in text files
+
+### Managing channels
+- [Managing channels](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html)
+- [Conda channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
+
+**Conda channels are the locations where packages are stored.** They serve as the base for hosting and managing packages. Conda packages are downloaded from remote channels, which are URLs to directories containing conda packages. 
+ 
+
+<!-- - TODO----------------------------------------- -->
+
+<!-- - kako izvozimo okolje v environment.yml
+- Namestitev zuanjih knjižnic
+- Praktični primeri postavitve programov 
 
 Namestitev
 - http://sanger-pathogens.github.io/Artemis/ACT/
-
-## Conda
 - https://docs.conda.io/projects/conda/en/stable/index.html
 - https://realpython.com/python-virtual-environments-a-primer/#the-conda-package-and-environment-manager
 - https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
 
 ## Bioconda
-- https://bioconda.github.io/
+- https://bioconda.github.io/ -->
