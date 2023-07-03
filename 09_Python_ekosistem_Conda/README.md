@@ -67,8 +67,9 @@ Test your installation. Run the command `conda list`. A list of installed packag
 > Is recommend that you always keep conda updated to the latest version.
 
 - [Updating conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html#updating-conda)
-- [Uninstalling conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html#uninstalling-conda)
     - `conda update conda`
+- [Uninstalling conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html#uninstalling-conda)
+   
 
 ## Uporaba ekosistema Conda
 - [Command reference](https://docs.conda.io/projects/conda/en/stable/commands.html)
