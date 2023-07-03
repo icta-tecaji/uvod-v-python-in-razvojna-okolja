@@ -186,9 +186,20 @@ Recommendations:
 - [Conda channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
 **Conda channels are the locations where packages are stored.** They serve as the base for hosting and managing packages. Conda packages are downloaded from remote channels, which are URLs to directories containing conda packages. 
- 
+
+The `conda` command searches a set of channels. By default, packages are automatically downloaded and updated from the **default channel**, which may require a paid license, as described in the repository terms of service.
+
+- [Default channels](https://repo.anaconda.com/pkgs/)
+
+The **conda-forge channel** is free for all to use. You can modify which remote channels are automatically searched; this feature is beneficial when maintaining a private or internal channel.
+
+- [Conda-forge](https://conda-forge.org/): Conda-forge is a community channel made up of thousands of contributors. Conda-forge itself is analogous to PyPI but with a unified, automated build infrastructure and more peer review of recipes.
+
+
 
 <!-- - TODO----------------------------------------- -->
+<!-- - https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html#config-channels -->
+
 
 <!-- - kako izvozimo okolje v environment.yml
 - Namestitev zuanjih knjižnic
