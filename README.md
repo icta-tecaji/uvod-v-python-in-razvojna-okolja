@@ -86,8 +86,15 @@ Password: 0898
 - Predstavitev ekosistema Conda
 - Namestitev ekosistema Conda
 - Uporaba ekosistema Conda
-
+- Konfiguracija s pomočjo `.condarc` datoteke
 
 ### [Linux in delo z oddaljenimi strežniki](./10_Linux_in_delo_z_oddaljenimi_strezniki/README.md)
+- WSL
+- Docker
+- Linux (Ubuntu)
+- Povezava na oddaljeni strežnik
+- Osnove dela z Linux terminalom
+- Zagon Python programa na oddaljenem strežniku
+- Crontab za avtomatsko zaganjanje
+- Remote Development using SSH (Visual Studio Code)
 
-- TODO

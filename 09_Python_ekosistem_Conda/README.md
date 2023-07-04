@@ -195,7 +195,53 @@ The `conda` command searches a set of channels. By default, packages are automat
 The **conda-forge channel** is free for all to use. You can modify which remote channels are automatically searched; this feature is beneficial when maintaining a private or internal channel.
 
 - [Conda-forge](https://conda-forge.org/): Conda-forge is a community channel made up of thousands of contributors. Conda-forge itself is analogous to PyPI but with a unified, automated build infrastructure and more peer review of recipes.
+- [Bioconda](https://bioconda.github.io/): Bioconda lets you install thousands of software packages related to biomedical research using the conda package manager.
+    - Bioconda supports only 64-bit Linux and macOS
 
+See channels in order of priority:
+- `conda config --show channels`
+
+Specifying channels when installing packages. From the command line use `--channel`:
+- `conda activate test`
+- `conda install scipy --channel conda-forge`
+
+You may specify multiple channels by passing the argument multiple times. Priority decreases from left to right - the first argument is higher priority than the second.
+
+Different channels can have the same package, so conda must handle these **channel collisions**. There will be no channel collisions if you use only the defaults channel. There will also be no channel collisions if all of the channels you use only contain packages that do not exist in any of the other channels in your list. The way conda resolves these collisions matters only when you have multiple channels in your channel list that host the same package.
+ 
+ By default, **conda prefers packages from a higher priority channel over any version from a lower priority channel**. Therefore, you can now safely put channels at the bottom of your channel list to provide additional packages that are not in the default channels and still be confident that these channels will not override the core package set.
+
+Conda collects all of the packages with the same name across all listed channels and processes them as follows:
+- Sorts packages from highest to lowest channel priority.
+- Sorts tied packages---packages with the same channel priority---from highest to lowest version number.
+- Sorts still-tied packages---packages with the same channel priority and same version---from highest to lowest build number. 
+- Installs the first package on the sorted list that satisfies the installation specifications.
+
+To make conda install the newest version of a package in any listed channel:
+- Run the equivalent command: `conda config --set channel_priority disabled`
+
+Conda then sorts as follows:
+- Sorts the package list from highest to lowest version number.
+- Sorts tied packages from highest to lowest channel priority.
+- Sorts tied packages from highest to lowest build number.
+
+The following command adds the channel "new_channel" to the top of the channel list, making it the highest priority:
+- `conda config --add channels conda-forge`
+- `conda config --show channels`
+
+Conda also has a command that adds the new channel to the bottom of the channel list, making it the lowest priority:
+- `conda config --append channels bioconda`
+- `conda config --show channels`
+
+**Strict channel priority can dramatically speed up conda operations and also reduce package incompatibility problems**. We recommend setting channel priority to "strict" when possible. Details about it can be seen by typing `conda config --describe channel_priority`.
+- **strict**: With strict channel priority, packages in lower priority channels are not considered if a package with the same name appears in a higher priority channel.
+- **flexible (default)**: With flexible channel priority, the solver may reach into lower priority channels to fulfill dependencies, rather than raising an unsatisfiable error.
+- **disabled**: With channel priority disabled, package version takes precedence, and the configured priority of channels is used only to break ties.
+
+## Konfiguracija s pomočjo `.condarc` datoteke
+- [Using the .condarc conda configuration file](https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html)
+
+The conda configuration file, `.condarc`, is an **optional runtime configuration file** that allows advanced users to configure various aspects of conda, such as which channels it searches for packages, proxy settings, and environment directories.
 
 
 <!-- - TODO----------------------------------------- -->
@@ -212,5 +258,5 @@ Namestitev
 - https://realpython.com/python-virtual-environments-a-primer/#the-conda-package-and-environment-manager
 - https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
 
-## Bioconda
-- https://bioconda.github.io/ -->
+
+- Add channel_priority: disabled to your .condarc file.
