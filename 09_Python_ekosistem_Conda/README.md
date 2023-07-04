@@ -172,6 +172,7 @@ To install multiple packages at once and specify the version of the package:
 - `conda install pandas=1.5.3 numpy=1.25.0`
 
 #### Using pip in an environment
+- [Improving interoperability with pip](https://conda.io/projects/conda/en/latest/user-guide/configuration/pip-interoperability.html?highlight=pip_interop_enabled)
 
 **Issues may arise when using pip and conda together**. When combining conda and pip, it is best to use an isolated conda environment. **Only after conda has been used to install as many packages as possible should pip be used to install any remaining software**. If modifications are needed to the environment, it is best to create a new environment rather than running conda after pip. When appropriate, conda and pip requirements should be **stored in text files.**
 
@@ -243,10 +244,30 @@ Conda also has a command that adds the new channel to the bottom of the channel 
 
 The conda configuration file, `.condarc`, is an **optional runtime configuration file** that allows advanced users to configure various aspects of conda, such as which channels it searches for packages, proxy settings, and environment directories.
 
+The `.condarc` file can change many parameters, including:
+- Where conda looks for packages.
+- If and how conda uses a proxy server.
+- Where conda lists known environments.
+- Whether to update the Bash prompt with the currently activated environment name.
+- Whether user-built packages should be uploaded to Anaconda.org.
+- What default packages or features to include in new environments.
+
+The default location is `C:\Users\<USER>\.condarc`. You can find information about your `.condarc` file by typing conda info in your terminal or Anaconda Prompt. 
+
+The `.condarc` file is not included by default, but it is **automatically created in your home directory the first time you run the conda config command**. To create or modify a `.condarc` file, open Anaconda Prompt or a terminal and enter the conda config command.
+
+- [Sample `.condarc` file](https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/sample-condarc.html).
+- [conda config command](https://docs.conda.io/projects/conda/en/stable/commands/config.html): Modify configuration values in .condarc. This is modeled after the git config command.
+- [Conda full configuration](https://conda.io/projects/conda/en/latest/configuration.html)
+
+Settings:
+- [Channel locations (channels)](https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html#channel-locations-channels)
+- [Always yes (always_yes)](on/use-condarc.html#always-yes-always-yes)
+
+
+
 
 <!-- - TODO----------------------------------------- -->
-<!-- - https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html#config-channels -->
-
 
 <!-- - kako izvozimo okolje v environment.yml
 - Namestitev zuanjih knjižnic
@@ -259,4 +280,3 @@ Namestitev
 - https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
 
 
-- Add channel_priority: disabled to your .condarc file.
