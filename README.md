@@ -87,6 +87,7 @@ Password: 0898
 - Namestitev ekosistema Conda
 - Uporaba ekosistema Conda
 - Konfiguracija s pomočjo `.condarc` datoteke
+- Sharing an environment
 
 ### [Linux in delo z oddaljenimi strežniki](./10_Linux_in_delo_z_oddaljenimi_strezniki/README.md)
 - WSL

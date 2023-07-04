@@ -4,10 +4,18 @@
 - [Getting Started with Conda](https://towardsdatascience.com/managing-project-specific-environments-with-conda-b8b50aa8be0e)
 - [Getting started with conda](https://conda.io/projects/conda/en/stable/user-guide/getting-started.html)
 - [Glossary](https://docs.conda.io/projects/conda/en/stable/glossary.html)
+- [Cheat sheet](https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html)
 
 ## Predstavitev ekosistema Conda
 
 ![conda](./images/img02.png)
+
+Conda’s benefits include:
+- Providing prebuilt packages which avoid the need to deal with compilers or figuring out how to set up a specific tool.
+- Managing one-step installation of tools that are more challenging to install (such as TensorFlow or IRAF).
+- Allowing you to provide your environment to other people across different platforms, which supports the reproducibility of research workflows.
+- Allowing the use of other package management tools, such as pip, inside conda environments where a library or tools are not already packaged for conda.
+- Providing commonly used data science libraries and tools, such as R, NumPy, SciPy, and TensorFlow. These are built using optimized, hardware-specific libraries (such as Intel’s MKL or NVIDIA’s CUDA) which speed up performance without code changes.
 
 ### Conda
 The **package and environment manager program** bundled with Anaconda that installs and updates conda packages and their dependencies. Conda also lets you easily switch between conda environments on your local computer.
@@ -145,9 +153,17 @@ When you create a new environment, conda installs the same Python version you us
 4. Verify which version of Python is in your current environment: `python --version`
 5. Deactivate the snakes environment and return to base environment: `conda deactivate`
 
+### Removing an environment
+To remove an environment, in your terminal window or an Anaconda Prompt, run:
+- `conda remove --name projekt-stari --all`
+
+To verify that the environment was removed, in your terminal window or an Anaconda Prompt, run:
+- `conda info --envs`
+
 ### Managing packages
 - [Conda packages](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html)
 - [Managing packages](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-pkgs.html)
+- [Installing with conda](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/installing-with-conda.html)
 
 A **conda package is a compressed tarball file (.tar.bz2) or [.conda](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html#conda-file-format) file** that contains:
 - system-level libraries.
@@ -221,6 +237,8 @@ Conda collects all of the packages with the same name across all listed channels
 To make conda install the newest version of a package in any listed channel:
 - Run the equivalent command: `conda config --set channel_priority disabled`
 
+![conda channel priority disabled](https://docs.conda.io/projects/conda/en/stable/_images/strict-disabled.png)
+
 Conda then sorts as follows:
 - Sorts the package list from highest to lowest version number.
 - Sorts tied packages from highest to lowest channel priority.
@@ -234,10 +252,16 @@ Conda also has a command that adds the new channel to the bottom of the channel 
 - `conda config --append channels bioconda`
 - `conda config --show channels`
 
-**Strict channel priority can dramatically speed up conda operations and also reduce package incompatibility problems**. We recommend setting channel priority to "strict" when possible. Details about it can be seen by typing `conda config --describe channel_priority`.
+**Strict channel priority can dramatically speed up conda operations and also reduce package incompatibility problems**. We recommend setting channel priority to "strict" when possible. 
+
+![strict](https://docs.conda.io/projects/conda/en/stable/_images/strict-enabled.png)
+
+Details about channel priority can be seen by typing `conda config --describe channel_priority`.
 - **strict**: With strict channel priority, packages in lower priority channels are not considered if a package with the same name appears in a higher priority channel.
 - **flexible (default)**: With flexible channel priority, the solver may reach into lower priority channels to fulfill dependencies, rather than raising an unsatisfiable error.
 - **disabled**: With channel priority disabled, package version takes precedence, and the configured priority of channels is used only to break ties.
+
+**[Conda's performance](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-performance.html)** can be affected by a variety of things. Unlike many package managers, Anaconda’s repositories generally don’t filter or remove old packages from the index. This allows old environments to be easily recreated. However, it does mean that the index metadata is always growing, and thus conda becomes slower as the number of packages increases.
 
 ## Konfiguracija s pomočjo `.condarc` datoteke
 - [Using the .condarc conda configuration file](https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html)
@@ -265,18 +289,15 @@ Settings:
 - [Always yes (always_yes)](on/use-condarc.html#always-yes-always-yes)
 
 
+## Sharing an environment
+You may want to share your environment with someone else---for example, so they can re-create a test that you have done. To allow them to quickly reproduce your environment, with all of its packages and versions, give them a copy of your `environment.yml` file.
 
+> If you already have an `environment.yml` file in your current directory, it will be overwritten during this task.
 
-<!-- - TODO----------------------------------------- -->
+1. Activate the environment to export: `conda activate test`
+2. Export your active environment to a new file: `conda env export > environment.yml`
 
-<!-- - kako izvozimo okolje v environment.yml
-- Namestitev zuanjih knjižnic
-- Praktični primeri postavitve programov 
+[Creating an environment file manually](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually)
 
-Namestitev
-- http://sanger-pathogens.github.io/Artemis/ACT/
-- https://docs.conda.io/projects/conda/en/stable/index.html
-- https://realpython.com/python-virtual-environments-a-primer/#the-conda-package-and-environment-manager
-- https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
-
+Create the environment from the `environment.yml` file: `conda env create -f environment.yml`
 
