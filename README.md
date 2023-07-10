@@ -2,6 +2,8 @@
 
 Vsebina za tečaj: Uvod v Python in razvojna okolja
 
+Anketa: https://forms.gle/oHix5iGyuC7vz6QD6
+
 ```
 Wifi:
 FE- guest
