@@ -2,15 +2,6 @@
 
 Vsebina za tečaj: Uvod v Python in razvojna okolja
 
-Anketa: https://forms.gle/oHix5iGyuC7vz6QD6
-
-```
-Wifi:
-FE- guest
-Username: i0623
-Password: 0898
-```
-
 ## Predpogoji
 
 - Za prvi del tečaja je potrebno imeti Windows 10 ali 11.
